@@ -1,0 +1,58 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  &__left,
+  &__right {
+    flex-basis: 45%;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    margin: 2rem 0;
+
+    p {
+      font-weight: var(--font-semi-bold);
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: var(--font-bold);
+      color: var(--color-main);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin-top: 1rem;
+
+      @include media-queries(atMediumLarge) {
+        justify-content: center;
+      }
+
+      li a {
+        font-size: 2.2rem;
+        color: var(--color-main);
+
+        &:hover {
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+}

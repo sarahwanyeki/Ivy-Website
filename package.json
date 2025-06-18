@@ -1,0 +1,15 @@
+{
+  "name": "ivy-website",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "author": "Sarah Wanyeki",
+  "license": "MIT",
+  "scripts": {
+    "watch": "node-sass scss/app.scss styles/app.css -w",
+    "build": "node-sass scss/app.scss styles/app.min.css --output-style=compressed"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
