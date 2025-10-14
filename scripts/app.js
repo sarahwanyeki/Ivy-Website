@@ -61,3 +61,17 @@ splide.mount();
 ScrollReveal().reveal('.about', { delay: 300 });
 ScrollReveal().reveal('.testimonials', { delay: 300 });
 ScrollReveal().reveal('.contact', { delay: 300 });
+
+// Work Gallery - Video Preview Play Functionality
+const videoItems = document.querySelectorAll('.work__videoItem');
+videoItems.forEach(item => {
+  const playBtn = item.querySelector('.work__playBtn');
+
+  if (playBtn) {
+    playBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // Navigate to videos page
+      window.location.href = 'videos.html';
+    });
+  }
+});
