@@ -10,7 +10,8 @@
       "Bash(done)",
       "Bash(mkdir:*)",
       "Bash(mv:*)",
-      "Bash(do ffmpeg -i \"$f\" -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k \"../$f\" -y -loglevel error -stats)"
+      "Bash(do ffmpeg -i \"$f\" -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k \"../$f\" -y -loglevel error -stats)",
+      "Bash(awk:*)"
     ],
     "deny": [],
     "ask": []
