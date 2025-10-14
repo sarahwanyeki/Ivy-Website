@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(git lfs track:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(winget install:*)",
+      "Bash(for:*)",
+      "Bash(do echo \"Compressing: $file\")",
+      "Bash(done)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(do ffmpeg -i \"$f\" -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k \"../$f\" -y -loglevel error -stats)"
     ],
     "deny": [],
     "ask": []
