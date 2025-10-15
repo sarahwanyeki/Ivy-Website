@@ -11,7 +11,8 @@
       "Bash(mkdir:*)",
       "Bash(mv:*)",
       "Bash(do ffmpeg -i \"$f\" -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k \"../$f\" -y -loglevel error -stats)",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(git lfs:*)"
     ],
     "deny": [],
     "ask": []

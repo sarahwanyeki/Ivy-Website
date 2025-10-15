@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "buildCommand": "git lfs pull",
+  "installCommand": "git lfs install",
   "headers": [
     {
       "source": "/assets/videos/(.*)",
@@ -11,6 +13,10 @@
         {
           "key": "Accept-Ranges",
           "value": "bytes"
+        },
+        {
+          "key": "Content-Type",
+          "value": "video/mp4"
         }
       ]
     }
