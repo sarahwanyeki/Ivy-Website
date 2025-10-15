@@ -12,7 +12,12 @@
       "Bash(mv:*)",
       "Bash(do ffmpeg -i \"$f\" -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k \"../$f\" -y -loglevel error -stats)",
       "Bash(awk:*)",
-      "Bash(git lfs:*)"
+      "Bash(git lfs:*)",
+      "Bash(gh:*)",
+      "Bash(powershell.exe:*)",
+      "Bash(git log:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
