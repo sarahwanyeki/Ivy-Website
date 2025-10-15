@@ -251,7 +251,7 @@
           <h3 class="work__categoryTitle">Video Projects</h3>
           <div class="work__gallery work__gallery--video">
             <div class="work__videoItem">
-              <video src="CAPPADOCIA TURKEY.mp4" poster></video>
+              <video src="assets/videos/cappadocia-turkey.mp4" muted preload="metadata" playsinline></video>
               <div class="work__videoOverlay">
                 <button class="work__playBtn" aria-label="Play video">
                   <i class="bi bi-play-circle-fill"></i>
@@ -260,7 +260,7 @@
               </div>
             </div>
             <div class="work__videoItem">
-              <video src="CHRISTMAS IN BALI.mp4" poster></video>
+              <video src="assets/videos/christmas-in-bali.mp4" muted preload="metadata" playsinline></video>
               <div class="work__videoOverlay">
                 <button class="work__playBtn" aria-label="Play video">
                   <i class="bi bi-play-circle-fill"></i>
@@ -269,10 +269,7 @@
               </div>
             </div>
             <div class="work__videoItem">
-              <video
-                src="Diani Kenya's #1 Beach Destination.mp4"
-                poster
-              ></video>
+              <video src="assets/videos/diani-kenyas-1-beach-destination.mp4" muted preload="metadata" playsinline></video>
               <div class="work__videoOverlay">
                 <button class="work__playBtn" aria-label="Play video">
                   <i class="bi bi-play-circle-fill"></i>
@@ -281,7 +278,7 @@
               </div>
             </div>
             <div class="work__videoItem">
-              <video src="EAST AFRICA BEACHES.mp4" poster></video>
+              <video src="assets/videos/east-africa-beaches.mp4" muted preload="metadata" playsinline></video>
               <div class="work__videoOverlay">
                 <button class="work__playBtn" aria-label="Play video">
                   <i class="bi bi-play-circle-fill"></i>
@@ -413,6 +410,34 @@
         </p>
       </div>
     </footer>
+
+    <!-- Video Modal/Lightbox -->
+    <div id="videoLightbox" class="video-lightbox">
+      <button class="video-lightbox__close" id="closeVideoLightbox">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="video-lightbox__content">
+        <video id="lightboxVideo" controls>
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h3 class="video-lightbox__title" id="lightboxVideoTitle"></h3>
+      </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <button class="lightbox__close" id="closeLightbox">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <button class="lightbox__prev" id="prevImage">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="lightbox__next" id="nextImage">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+      <img src="" alt="Full size image" class="lightbox__image" id="lightboxImage" />
+    </div>
 
     <!-- SplideJs v3 -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>

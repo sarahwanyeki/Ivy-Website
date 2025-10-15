@@ -1557,3 +1557,21 @@ img {
     right: 1rem;
   }
 }
+
+/* Overrides: ensure lightbox has comfortable insets and bounded size */
+.video-lightbox {
+  /* Add responsive spacing from all viewport edges */
+  padding: min(5vh, 48px) min(5vw, 48px);
+}
+
+.video-lightbox__content {
+  /* Prevent content from touching overlay edges and overflowing height */
+  max-height: calc(100% - 2rem);
+}
+
+.video-lightbox__content video {
+  /* Keep video within viewport with breathing room */
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
